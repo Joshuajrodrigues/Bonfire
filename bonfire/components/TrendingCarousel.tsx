@@ -1,21 +1,20 @@
-import React, { FunctionComponent } from 'react'
-import { IPopularPosts } from '../pages'
-
-
-
-const TrendingCarousel:FunctionComponent<{popularPosts:IPopularPosts[]}> = ({popularPosts}) => {
+import Image from "next/image";
+import React, { FunctionComponent } from "react";
+import { IPopularPosts } from "../pages";
+import styles from '../styles/Carousel.module.css'
+const TrendingCarousel: FunctionComponent<{
+  popularPosts: IPopularPosts[];
+}> = ({ popularPosts }) => {
   return (
     <>
-    {
-        popularPosts?.map((post)=>(
-            <div key={post.mal_id} >
-                {post.animeTitle} 
-            </div>
-        ))
-    }
-        
+      {popularPosts?.map((post) => (
+        <div className={styles.container} key={post.mal_id}>
+          <Image width={200} height={200} src={post.animeImg} />
+          {post.animeTitle}
+        </div>
+      ))}
     </>
-  )
-}
+  );
+};
 
-export default TrendingCarousel
+export default TrendingCarousel;

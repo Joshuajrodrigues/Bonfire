@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Bonfire</title>
+        <title>Bonfire Anime</title>
         <meta
           name="description"
           content="Stream anime from the the comfort of your bonfire."

@@ -1,0 +1,25 @@
+
+
+.search{
+    border-radius: 0.3em;
+    width: 24em;
+    height: 2.5em;
+    padding: 1em;
+    border: 1px solid black;
+    margin-left: 4em;
+}
+
+.searchDropdown{
+    border-radius: 0.3em;
+    width: 20em;
+    height: 14em;
+    padding: 1em;
+    margin-top: 0.4em;
+    margin-left: 3.5em;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 11;
+    position: fixed;
+   overflow-x: hidden;
+   overflow-y: scroll;
+}
