@@ -1,0 +1,41 @@
+.carousel{
+    position: relative;
+    height: 200px;
+    width: 80%;
+    margin: 0 auto;
+}
+.carousel__image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.carousel__track_container{
+    background-color: aquamarine;
+    height: 100%;
+    position: relative;
+}
+.carousel__track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.carousel__slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.carousel__button_left{
+    left: -20px;
+}
+.carousel__button_right{
+    right: -20px;
+}

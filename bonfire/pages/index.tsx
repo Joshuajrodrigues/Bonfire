@@ -1,7 +1,10 @@
 import type { GetStaticProps, NextPage } from "next";
+import { List, MagnifyingGlass, XCircle } from "phosphor-react";
+import { useState } from "react";
+import Header from "../components/Header";
 import Search from "../components/Search";
 import TrendingCarousel from "../components/TrendingCarousel";
-import styles from './../styles/Home.module.css'
+import styles from "./../styles/Home.module.css";
 export interface IPopularPosts {
   animeTitle: string;
   mal_id: string;
@@ -25,12 +28,9 @@ const Home: NextPage<{ popularPosts: IPopularPosts[] }> = ({
 }) => {
   return (
     <div>
-      <header className={styles.header}>
-        <h1>Bonfire🔥 Anime</h1>
-        <Search/>
-      </header>
+      <Header />
       <main>
-        {/* <TrendingCarousel popularPosts={popularPosts} /> */}
+        <TrendingCarousel popularPosts={popularPosts} />
       </main>
     </div>
   );

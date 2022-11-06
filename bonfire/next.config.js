@@ -11,6 +11,12 @@ const nextConfig = {
         pathname: '/**'
       
       },
+      {
+        protocol: 'https',
+        hostname: 'gogocdn.net',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 }

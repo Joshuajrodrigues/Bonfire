@@ -8,14 +8,31 @@
     border: 1px solid black;
     margin-left: 4em;
 }
-
+.searchCard{
+    display: flex;
+    align-items: center;
+    padding: 0.2em;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.searchCard:hover{
+    background-color: rgba(255, 166, 0, 0.171);
+}
+.searchCard span{
+    margin-left: 0.5em;
+}
+.searchCard p {
+    color: gray;
+    font-size: small;
+    margin-left: 0.5em;
+}
 .searchDropdown{
     border-radius: 0.3em;
     width: 20em;
-    height: 14em;
+    height: 20em;
     padding: 1em;
     margin-top: 0.4em;
-    margin-left: 3.5em;
+    margin-left: -5em;
     background-color: white;
     border: 1px solid black;
     z-index: 11;
@@ -23,3 +40,20 @@
    overflow-x: hidden;
    overflow-y: scroll;
 }
+
+@media only screen and (max-width:700px) {
+    .search{
+        border-radius: 0.3em;
+        width: 24em;
+        height: 2.5em;
+        border: 1px solid black;
+    }
+
+ }
+
+ @media only screen and (max-width:450px) {
+    .searchDropdown{
+        width: 15em;
+        margin-left: 0em;
+    }
+ }
