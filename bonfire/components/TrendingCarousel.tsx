@@ -8,8 +8,8 @@ const TrendingCarousel: FunctionComponent<{
 }> = ({ popularPosts }) => {
   return (
     <div className={styles.carousel}>
-      <button className={styles.carousel__button+' '+ styles.carousel__button_left}>
-        <CaretLeft  size={12} />
+      <button title="move left" className={styles.carousel__button + ' ' + styles.carousel__button_left}>
+        <CaretLeft size={24} />
       </button>
       <div className={styles.carousel__track_container}>
         <ul className={styles.carousel__track}>
@@ -24,13 +24,13 @@ const TrendingCarousel: FunctionComponent<{
           </li>
         </ul>
       </div>
-      <button className={styles.carousel__button+' '+ styles.carousel__button_right}>
-        <CaretRight size={12} />
+      <button title="move right" className={styles.carousel__button + ' ' + styles.carousel__button_right}>
+        <CaretRight size={24} />
       </button>
-      <div className="carousel__nav">
-        <button className="carousel__indicator carousel__indicator_active"></button>
-        <button className="carousel__indicator"></button>
-        <button className="carousel__indicator"></button>
+      <div className={styles["carousel__nav"]}>
+        <button className={styles.carousel__indicator + ' ' + styles.carousel__indicator_active}></button>
+        <button className={styles.carousel__indicator}></button>
+        <button className={styles.carousel__indicator}></button>
       </div>
     </div>
   );
